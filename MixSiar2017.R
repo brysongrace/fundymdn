@@ -11,7 +11,7 @@ list.files()
 
 #Upper Salmon
 #Load the consumer mixture data
-mix <- load_mix_data(filename = "UScons.csv", 
+mix <- load_mix_data(filename = "UScons17FINAL.csv", 
                      iso_names = c("d13C","d15N"), 
                      factors   = c("Region", "Time"), 
                      fac_random = c(FALSE, FALSE), 
@@ -20,14 +20,14 @@ mix <- load_mix_data(filename = "UScons.csv",
 
 
 #Load the source data
-source <- load_source_data(filename = "USsource.csv",
+source <- load_source_data(filename = "USsource17FINAL.csv",
                            source_factors = c("Region"),
                            conc_dep = FALSE, 
                            data_type = "means", 
                            mix)
 
 #Load the discrimination factors
-discr <- load_discr_data(filename = "UStef.csv", mix)
+discr <- load_discr_data(filename = "tef16.csv", mix)
 
 
 # Make an isospace plot
@@ -93,7 +93,7 @@ library(ggplot2)
 list.files()
 
 #Load the consumer mixture data
-mixPW <- load_mix_data(filename = "PWcons.csv", 
+mixPW <- load_mix_data(filename = "PWcons17FINAL.csv", 
                      iso_names = c("d13C","d15N"), 
                      factors   = c("Region", "Time"), 
                      fac_random = c(FALSE, FALSE), 
@@ -102,14 +102,14 @@ mixPW <- load_mix_data(filename = "PWcons.csv",
 
 
 #Load the source data
-sourcePW <- load_source_data(filename = "PWsource.csv",
+sourcePW <- load_source_data(filename = "PWsource17FINAL.csv",
                            source_factors = c("Region"),
                            conc_dep = FALSE, 
                            data_type = "means", 
                            mixPW)
 
 #Load the discrimination factors
-discrPW <- load_discr_data(filename = "PWtef.csv", mixPW)
+discrPW <- load_discr_data(filename = "tef16.csv", mixPW)
 
 
 # Make an isospace plot
