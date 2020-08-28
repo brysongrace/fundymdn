@@ -30,3 +30,5 @@ R code in the files "MixSiar2015.R, MixSiar2016.R, MixSiar2017.R" were used to q
 - *USsource16FINAL.csv
 - *USsource17FINAL.csv
 - *tef16.csv
+
+R code in the file "Boxplots.R" was used to create boxplots visualizing the proportion of marine-derived nutrients across years and sites. Additional files include "Returningsalmonnumbers.csv", used to plot the number and biomass of returning salmon each year, and "Sitelocations.csv" to create a map of the study area. 
